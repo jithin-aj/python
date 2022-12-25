@@ -5,9 +5,9 @@ Round off the given number to the nearest round off value given
 def get_round_off (number, round_off):
     """
     Find where the number lies w.r.t given nearest value
-    If the number is less than half of round_off, round down to nearest value as it lies in
+    If the number is less than half of round_off value, round down to nearest value as it lies in
     lower half.
-    If the number greater than half of round_off, round up to nearest value as it lies in
+    If the number greater than half of round_off value, round up to nearest value as it lies in
     upper half
 
     Args:

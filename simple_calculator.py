@@ -11,8 +11,10 @@ def calculator (op):
         op[0]: operand 1
         op[1]: operator to perform
         op[2]: operand 2
-    """
 
+    Returns:
+        int: result of the requested operation
+    """
     # Get the operands and operator
     operand_1 = int(op[0])
     operator  = op[1]
