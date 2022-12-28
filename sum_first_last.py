@@ -19,12 +19,26 @@ def sum_first_last (number):
         int: sum of first and last digits
     """
 
-    # The length of the string should give us the last digit
-    # NOTE: Our index starts with 0
-    last = len(number) - 1
+    # Uncomment below for solving the above problem using step 1
+    """
+    # Using step1 as mentioned in above.
+    # Convert the string input into integer
+    num = int(number)
 
-    # Calculate the sum
-    sum = int(number[0]) + int(number[last])
+    # Get the last digit
+    sum = num % 10
+
+    # Run through each digits from the last until the first digit
+    while num > 9:
+        num /= 10
+
+    sum += int(num)
+    """
+
+    # Solve using step2 as mentioned above
+    # Convert the first and last character into int and find the sum.
+    # sum = int(number[0]) + int(number[-1]) # comment this line to test step1
+
     return sum
 
 # Get the number from the user
